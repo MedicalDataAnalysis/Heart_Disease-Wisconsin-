@@ -1,5 +1,5 @@
 import string
-cleveland_data = open("cleveland_data.txt", "r")
+cleveland_data = open("original_data/cleveland_data.txt", "r")
 
 def create_list():
     patient_list = []
