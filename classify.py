@@ -14,6 +14,7 @@ def SVMAccuracy(pred, labels_test):
     accuracy = accuracy_score(pred, labels_test)
     return accuracy
 
+# Decision Tree
 def DTAccuracy(pred, labels_test):
     """ compute the accuracy of Support Vector Machines classifier """
 
