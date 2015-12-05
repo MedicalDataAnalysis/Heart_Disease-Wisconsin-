@@ -1,6 +1,6 @@
-# Train set: 90%
-# Test set: 10%
-TRAINING_PERCENT = 0.9
+# Train set: 50%
+# Test set: 50%
+TRAINING_PERCENT = 0.5
 
 def make_train_test_set(dataFrame):
     total_patients = len(dataFrame)
