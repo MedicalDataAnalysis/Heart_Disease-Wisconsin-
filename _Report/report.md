@@ -3,7 +3,7 @@
 ### Seed Project for Medical Platform
 --------------------------------------------------------------------------   ___Hankyu Jang, Jihoon Lee___
 
-## Introduction
+## 1.Introduction
 
   The topic of this report is the diagnosing of heart disease. More specifically the possibility of diagnosing a patient without having to interact with other assistant.
 
@@ -13,7 +13,7 @@
 
   Our project goal is took data from users which contains symptoms of disease and analyzed symptoms to find out whether users get disease or not. First of all we want diagnosis data which contains symptoms and diagnosing result. In gathering dataset we separate the disease with rules that categorize with part of body section like heart disease, bronchial pneumonia. We find the 'Heart Disease Databases' consist of 'cleveland.data, hungarian.data, long-beach-va.data, switzerland.data' with 76 attributes and 920 examples.
 
-### Project Plan
+### 1.1 Project Plan
 1. Find data
 
 2. Data cleaning
@@ -30,9 +30,9 @@
 
 8. Conclusion
 
-## Data outline
+## 1.2 Data outline
 
-### Data description
+### 1.2.1 Data description
 
 1. Title : Heart Disease Databases
 
@@ -224,15 +224,15 @@
 
 7. Missing Attribute Values: Several.  Distinguished with value -9.0.
 
-### Sample data outline
+### 1.2.2 Sample data outline
 
 <img src='/img/sampledata.jpg' width=800/>
 
-### Data assessment
+### 1.2.3 Data assessment
 
   1. Missing values
 
-    <img src='/img/missingV.jpg' width=700/>
+    <img src='/img/missingV.jpg' width=550/>
 
   missing value is '-9' or '0'. But we figure out that actual missing value is '?' or '-9'. We exchange missing value with other features value's average value. For example feature 'col' has -9 which is missing value we replaced as below.
 
@@ -245,11 +245,11 @@
 
   2. Outliers
 
-  <img src="/img/outliers.jpg" width=350/>
+  <img src="/img/outliers.jpg" width=300/>
 
     Fortunately in 14 features of dataset has two outliers which are 'trestbps' and 'ca' feature. 'trestbps'is maximum heart rate but in Long Beach data one example has value ='0'. And 'ca' range (0~3) but the hungarian data has the 'ca' value is '9'. so we deleted both examples.
 
-#### Descriptive Statistics
+#### 1.2.3.1 Descriptive Statistics
 
   <img src='/img/describe.PNG' width=700/>
 - Summary of each features in Heart disease database.
@@ -267,11 +267,11 @@
 
 - In Age- cholesterol scatter plot we recognized that 'switzerland' data which is blue dots are value '0' in every examples. So we have '0' missing value in 'switzerland' data 'cholesterol' feature.
 
-## Body
+## 2.Body
 
-### Methodology
+### 2.1 Methodology
 
-#### Goal: Predict Heart Disease with given features
+#### 2.1.1 Goal: Predict Heart Disease with given features
 1. __Make several datasets__
 
   - Make presence to absence data
@@ -320,10 +320,10 @@
 
   - Decision Tree
 
-#### Naive Bayse
+#### 2.1.2 Naive Bayse
 __Naive Bayes__ methods are a set of supervised learning algorithms based on applying Bayes’ theorem with the “naive” assumption of independence between every pair of features.
 
-#### Support Vector Machines
+#### 2.1.3 Support Vector Machines
 __Support vector machines (SVMs)__ are a set of supervised learning methods used for classification, regression and outliers detection.
 
 The advantages of support vector machines are:
@@ -337,7 +337,7 @@ The advantages of support vector machines are:
 
 <img src = "/img/2_SVM_kernel_diagram.PNG" width = 700/>
 
-####  Tree
+####  2.1.4 Tree
 ##### Parameter which makes huge difference in decision boundaries
 
 - Number of samples at leaf node
@@ -346,14 +346,14 @@ The advantages of support vector machines are:
 
 <img src = "/img/3_Decision_tree_max_depth.PNG" width = 600/>
 
-### Working environment
+### 2.2 Working environment
 
-#### Language
+#### 2.2.1 Language
 - Python3 (Anaconda)
 
 - Python2 (IPythonNotebook)
 
-#### Library
+#### 2.2.2 Library
 - Numpy
 
 - Pandas
@@ -364,7 +364,7 @@ The advantages of support vector machines are:
 
 - Pydot
 
-#### Analysis Time
+#### 2.2.3 Analysis Time
 
 |Week|Activity  |
 |----|:--------:|
@@ -373,9 +373,9 @@ The advantages of support vector machines are:
 |13~14|Data Analysis|
 |15|Prepare Report|
 
-### Finding
+### 2.3 Finding
 
-#### Naive Bayse
+#### 2.3.1 Naive Bayse
 
 - All Data (Training: 50%, Test: 50%)
 
@@ -386,7 +386,7 @@ The advantages of support vector machines are:
 |Original|0, 1, 2, 3, 4|37.39 %|
 |___Nominal___|___0, 1, 2, 3, 4___|___40.87 %___|
 
-#### Support Vector Machines
+#### 2.3.2 Support Vector Machines
 
 - All Data (Training: 40%, Test: 60%)
 chol 0 -> average value
@@ -407,7 +407,7 @@ chol 0 -> average value
 |Feature Scaled|0, 1, 2, 3, 4|linear|44.75 %|
 
 
-#### Decision Tree
+#### 2.3.3 Decision Tree
 
 - All Data (Training: 50%, Test: 50%)
 
@@ -438,7 +438,7 @@ chol 0 -> average value
 |Nominal |0, 1, 2, 3, 4|-|3 |38.04 %|
 |Nominal |0, 1, 2, 3, 4|-|4 |38.04 %|
 
-#### Algorithms Comparison
+#### 2.3.4 Algorithms Comparison
 
 |Algorithm|Data Type|Scale|Accuracy|
 |---|:---:|:---:|:---:|
@@ -447,11 +447,11 @@ chol 0 -> average value
 |Decision Tree (Max Depth = 3)|Original|0, 1|76.96 %|
 |Naive Bayse|Nominal|0, 1, 2, 3, 4|40.87 %|
 |___SVM (kernel = linear)___|___Original___|___0, 1, 2, 3, 4___|___47.83 %___|
-|Decision Tree (## of samples at leaf node = 2)|Original|0, 1, 2, 3, 4|38.26 %|
+|Decision Tree (# of samples at leaf node = 2)|Original|0, 1, 2, 3, 4|38.26 %|
 
-## Conclusion
+## 3.Conclusion
 
-### Discovery
+### 3.1 Discovery
 
 - Algorithms with best accuracy
 
@@ -460,13 +460,13 @@ chol 0 -> average value
 |___Naive Bayse___|___Original___|___0, 1___|___81.30 %___|
 |___SVM (kernel = linear)___|___Original___|___0, 1, 2, 3, 4___|___47.83 %___|
 
-### Unexpected
+### 3.2 Unexpected
 
 - Naive Bayse Accuracy: Analysis using original data (chol not handled) got higher accuracy. Why?
 
 - Visualizing Decision Tree
 
-### Expectation
+### 3.3 Expectation
 
 - Predict heart disease using 13 features
 
@@ -476,12 +476,12 @@ chol 0 -> average value
 
 - Doctors will make better diagnosis with help of these algorithms applied to medical data.
 
-### In the future
+### 3.4 In the Future
 
 - GitHub organization: `MedicalDataAnalysis`
 
 - repository: `Heart_Disease`
 
-- Plan to make repositories for other disease whenever we get the data.
+- Plan to make repositories for other disease whenever we get the data
 
-- Build medical platform using models we created.
+- Build medical platform using models we created
