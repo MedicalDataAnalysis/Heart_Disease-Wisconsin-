@@ -245,7 +245,7 @@
 
   2. Outliers
 
-  <img src="/img/outliers.jpg" width=500/>
+  <img src="/img/outliers.jpg" width=350/>
 
     Fortunately in 14 features of dataset has two outliers which are 'trestbps' and 'ca' feature. 'trestbps'is maximum heart rate but in Long Beach data one example has value ='0'. And 'ca' range (0~3) but the hungarian data has the 'ca' value is '9'. so we deleted both examples.
 
@@ -273,28 +273,51 @@
 
 #### Goal: Predict Heart Disease with given features
 1. __Make several datasets__
+
   - Make presence to absence data
+
     - Original Data: 0, 1, 2, 3, 4
+
     - New Data: 0, 1
+
   - Make feature scaled data
+
     - Use in SVM
+
     - Scale each features to have values in 0 and 1
+
   - Make nominal data
+
     - Find 25%, 50%, 75% points
+
     - Divide data into 4 parts
+
     - Set each parts with values 1 ~ 4
+
   - Combine all data into one (total 918 patients)
+
     - Cleveland
+
     - Hungarian
+
     - Switzerland
+
     - VA
+
 2. __Make training set & test set__
+
   - Cleveland data: few missing values
+
   - Used Cleveland data + some other data as training set.
+
   - Find ratio of training set and test set that best predicts heart disease
+
 3. __Algorithms__
+
   - Naive Bayse
+
   - Support Vector Machines
+
   - Decision Tree
 
 #### Naive Bayse
@@ -316,21 +339,29 @@ The advantages of support vector machines are:
 
 ####  Tree
 ##### Parameter which makes huge difference in decision boundaries
+
 - Number of samples at leaf node
+
 - Max depth
-<img src = "/img/3_Decision_tree_max_depth.PNG" width = 700/>
+
+<img src = "/img/3_Decision_tree_max_depth.PNG" width = 600/>
 
 ### Working environment
 
 #### Language
 - Python3 (Anaconda)
+
 - Python2 (IPythonNotebook)
 
 #### Library
 - Numpy
+
 - Pandas
+
 - Matplotlib
+
 - Sklearn
+
 - Pydot
 
 #### Analysis Time
