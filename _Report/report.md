@@ -1,9 +1,9 @@
-# Bigdata analysis final project
-## Diagnostic aid for heart disease using data
-### seed project of medical platform
+# Bigdata Analysis Final Project
+## Diagnostic Aid for Heart Disease Using Data
+### Seed Project for Medical Platform
 --------------------------------------------------------------------------   ___Hankyu Jang, Jihoon Lee___
 
-### Introduction
+## Introduction
 
   The topic of this report is the diagnosing of heart disease. More specifically the possibility of diagnosing a patient without having to interact with other assistant.
 
@@ -13,7 +13,7 @@
 
   Our project goal is took data from users which contains symptoms of disease and analyzed symptoms to find out whether users get disease or not. First of all we want diagnosis data which contains symptoms and diagnosing result. In gathering dataset we separate the disease with rules that categorize with part of body section like heart disease, bronchial pneumonia. We find the 'Heart Disease Databases' consist of 'cleveland.data, hungarian.data, long-beach-va.data, switzerland.data' with 76 attributes and 920 examples.
 
-#### Project Plan
+### Project Plan
 1. Find data
 
 2. Data cleaning
@@ -30,9 +30,9 @@
 
 8. Conclusion
 
-### Data outline
+## Data outline
 
-#### Data description
+### Data description
 
 1. Title : Heart Disease Databases
 
@@ -47,7 +47,7 @@
   3. University Hospital, Basel, Switzerland: Matthias Pfisterer, M.D.
 
   4. V.A. Medical Center, Long Beach and Cleveland Clinic Foundation:
-  <center>Robert Detrano, M.D., Ph.D.<center>
+  Robert Detrano, M.D., Ph.D.
 
   (b) Donor: David W. Aha (aha@ics.uci.edu) (714) 856-8779
 
@@ -80,10 +80,11 @@
 
 6. Attribute Information:
 
-  Only 14 used
+  __Only 14 used__
+
   1. 3  (age) age in years
 
-  2. 4  (sex) (1 = male; 0 = female)
+  - 4  (sex) (1 = male; 0 = female)
 
   - 9  (cp) chest pain type
 
@@ -223,45 +224,47 @@
 
 7. Missing Attribute Values: Several.  Distinguished with value -9.0.
 
-#### Sample data outline
+### Sample data outline
 
-<center><img src='/img/sampledata.jpg' width=540/></center>
+<img src='/img/sampledata.jpg' width=800/>
 
-#### Data assessment
+### Data assessment
+
   1. Missing values
 
-    <center><img src='/img/missingV.jpg', width=350></center>
+    <img src='/img/missingV.jpg' width=700/>
 
   missing value is '-9' or '0'. But we figure out that actual missing value is '?' or '-9'. We exchange missing value with other features value's average value. For example feature 'col' has -9 which is missing value we replaced as below.
-  <center>
+
   ```
   'col'== '-9' or '?' to 'col'= avg value of (feature 'col')
   ```
-</center>
+
   We used pandas for replacing. And also used round function to insert integer value to examples.
 
 
   2. Outliers
 
-  <center><img src='/img/outliers.JPG', width=220,align=CENTER>
+  <img src="/img/outliers.jpg" width=500/>
 
     Fortunately in 14 features of dataset has two outliers which are 'trestbps' and 'ca' feature. 'trestbps'is maximum heart rate but in Long Beach data one example has value ='0'. And 'ca' range (0~3) but the hungarian data has the 'ca' value is '9'. so we deleted both examples.
 
 #### Descriptive Statistics
 
-  <center><img src='/img/describe.PNG', width=350></center>
+  <img src='/img/describe.PNG' width=700/>
 - Summary of each features in Heart disease database.
 
-  <center><img src='/img/histogram.JPG', width=350></center>
+  <img src='/img/histogram.JPG' width=700/>
 - histogram of features 'age','blood pressure','cholestoral' and 'Maximum heart rate'
 
-  <center><img src='/img/scatter.JPG', width=350>
+  <img src='/img/scatter.JPG' width=700/>
 - Scatter plot with x_label 'age' y_label='blood pressure', 'cholestoral' and 'Maximum heart rate'
 
-<p><img src='/img/bloodP_age.JPG', width=350>
-  <img src='/img/chol_age.JPG', width=350></p>
+<p><img src='/img/bloodP_age.JPG' width=700>
+<img src='/img/chol_age.JPG' width=700/></p>
 
-  <img src='/img/MaxH_Age.JPG', width=350>
+<img src='/img/MaxH_Age.JPG' width=700/>
+
 - In Age- cholesterol scatter plot we recognized that 'switzerland' data which is blue dots are value '0' in every examples. So we have '0' missing value in 'switzerland' data 'cholesterol' feature.
 
 ## Body
@@ -309,13 +312,13 @@ The advantages of support vector machines are:
 ##### Parameter which makes huge difference in decision boundaries
 - Kernel
 
-<img src = "/img/2_SVM_kernel_diagram.PNG" width = 350/>
+<img src = "/img/2_SVM_kernel_diagram.PNG" width = 700/>
 
 ####  Tree
 ##### Parameter which makes huge difference in decision boundaries
 - Number of samples at leaf node
 - Max depth
-<img src = "/img/3_Decision_tree_max_depth.PNG" width = "350"/>
+<img src = "/img/3_Decision_tree_max_depth.PNG" width = 700/>
 
 ### Working environment
 
