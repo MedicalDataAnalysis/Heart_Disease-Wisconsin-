@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 from pandas import DataFrame
 
-df = pd.read_csv("presence_to_absence_data/switzerland01.csv")
+df = pd.read_csv("processed_data2(no_missing_value)/all.csv")
 
 for column in df:
     if column == "num":
@@ -13,5 +13,5 @@ for column in df:
     rescaled_weight = np.round(scaler.fit_transform(weights), 4)
     df[column] = rescaled_weight
 
-df.to_csv("processed_data3(feature_scaled)/switzerland01_fs.csv",\
+df.to_csv("processed_data3(feature_scaled)/all_fs.csv",\
             index = False)

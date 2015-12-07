@@ -17,11 +17,11 @@ def scale_to_nominal(df, feature):
         else:
             df.set_value(patient, feature, 4)
 
-df = pd.read_csv("processed_data2(no_missing_value)/va01.csv")
+df = pd.read_csv("processed_data2(no_missing_value)/all.csv")
 
 total_patients = len(df)
 features = df.columns
 for feature in features:
     scale_to_nominal(df, feature)
-    
-df.to_csv("processed_data4(nominal)/va01_n.csv", index = False)
+
+df.to_csv("processed_data4(nominal)/all_n.csv", index = False)

@@ -409,7 +409,7 @@ chol 0 -> average value
 
 #### 2.3.3 Decision Tree
 
-- All Data (Training: 50%, Test: 50%)
+- All Data 0, 1 (Training: 50%, Test: 50%)
 
 |Data Type|Scale|# of Samples at Leaf Node|Max Depth|Accuracy|
 |---|:---:|:---:|:---:|:---:|
@@ -425,6 +425,11 @@ chol 0 -> average value
 |Nominal |0, 1|-|2 |63.04 %|
 |Nominal |0, 1|-|3 |68.26 %|
 |Nominal |0, 1|-|4 |63.04 %|
+
+- All Data 0, 1, 2, 3, 4 (Training: 50%, Test: 50%)
+
+|Data Type|Scale|# of Samples at Leaf Node|Max Depth|Accuracy|
+|---|:---:|:---:|:---:|:---:|
 |___Original___|___0, 1, 2, 3, 4___|___2___ |-|___38.26 %___|
 |Original|0, 1, 2, 3, 4|5 |-|36.96 %|
 |Original|0, 1, 2, 3, 4|10|-|36.30 %|
