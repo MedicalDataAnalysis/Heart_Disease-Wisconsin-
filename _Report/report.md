@@ -260,10 +260,10 @@
   <img src='/img/scatter.JPG' width=700/>
 - Scatter plot with x_label 'age' y_label='blood pressure', 'cholestoral' and 'Maximum heart rate'
 
-<p><img src='/img/bloodP_age.JPG' width=700>
-<img src='/img/chol_age.JPG' width=700/></p>
+<p><img src='/img/bloodP_age.JPG' width=350>
+<img src='/img/chol_age.JPG' width=350/></p>
 
-<img src='/img/MaxH_Age.JPG' width=700/>
+<img src='/img/MaxH_Age.JPG' width=350/>
 
 - In Age- cholesterol scatter plot we recognized that 'switzerland' data which is blue dots are value '0' in every examples. So we have '0' missing value in 'switzerland' data 'cholesterol' feature.
 
