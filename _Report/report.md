@@ -3,6 +3,36 @@
 ### Seed Project for Medical Platform
 --------------------------------------------------------------------------   ___Hankyu Jang, Jihoon Lee___
 
+## Index
+- 1.Introduction
+  - 1.1 Project Plan
+  - 1.2 Data outline
+    - 1.2.1 Data description
+    - 1.2.2 Sample data outline
+    - 1.2.3 Data assessment
+      - 1.2.3.1 Descriptive Statistics
+- 2.Body
+  - 2.1 Methodology
+    - 2.1.1 Goal: Predict Heart Disease with given features
+    - 2.1.2 Naive Bayse
+    - 2.1.3 Support Vector Machines
+    - 2.1.4 Tree
+  - 2.2 Working environment
+    - 2.2.1 Language
+    - 2.2.2 Library
+    - 2.2.3 Analysis Time
+  - 2.3 Finding
+    - 2.3.1 Naive Bayse
+    - 2.3.2 Support Vector Machines
+    - 2.3.3 Decision Tree
+    - 2.3.4 Algorithms Comparison
+- 3.Conclusion
+  - 3.1 Discovery
+  - 3.2 Unexpected
+  - 3.3 Expectation
+  - 3.4 In the Future
+- 4.Reference
+
 ## 1.Introduction
 
   The topic of this report is the diagnosing of heart disease. More specifically the possibility of diagnosing a patient without having to interact with other assistant.
@@ -489,3 +519,18 @@ chol 0 -> average value
 - Plan to make repositories for other disease whenever we get the data
 
 - Build medical platform using models we created
+
+## 4.Reference
+- Ms. Shinde Swati B, March-April, 2015, "Decision Support System on Prediction of Heart Disease Using Data Mining Techniques", International Journal of Engineering Research and General Science Volume 3, Issue 2
+
+- Mai Shouman, Tim Turner, Rob Stocker(2011), "Using Decision Tree for Diagnosing Heart Disease Patients", CRPIT Volume 121 - Data Mining and Analytics 2011
+
+- Anna Olsson, Denise Nordlof(2015), "Early screening diagnostic aid for heart disease using data mining", KTH Royal Institute of Technology
+
+- Naive Bayse, scikit-learn documentation version 0.17, http://scikit-learn.org/stable/modules/naive_bayes.html
+
+- Support Vector Machines, scikit-learn documentation version 0.17, http://scikit-learn.org/stable/modules/svm.html
+
+- Decision Tree, scikit-learn documentation version 0.17, http://scikit-learn.org/stable/modules/tree.html
+
+- Udacity, “Intro to Machine Learning”, https://www.udacity.com/course/intro-to-machine-learning--ud120
