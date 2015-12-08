@@ -521,11 +521,20 @@ chol 0 -> average value
 - Build medical platform using models we created
 
 ## 4.Reference
-- Anna Olsson, Denise Nordlof(2015), "Early Screening Diagnostic Aid for Heart Disease Using Data Mining", KTH Royal Institute of Technology
+
+- Hyebong Choi(2015), "PRESENTATION IN DATA SCIENCE", CCE40001: BIG DATA ANALYTICS
+
+- Jyoti Soni, Uzma Ansari, Dipesh Sharma, Sunita Soni(2011), "Intelligent and Effective Heart Disease Prediction System using Weighted Associative Classifiers, IJCSE
 
 - Mai Shouman, Tim Turner, Rob Stocker(2011), "Using Decision Tree for Diagnosing Heart Disease Patients", CRPIT Volume 121 - Data Mining and Analytics 2011
 
 - Ms. Shinde Swati B, March-April, 2015, "Decision Support System on Prediction of Heart Disease Using Data Mining Techniques", International Journal of Engineering Research and General Science Volume 3, Issue 2
+
+- Pawel Herman, Orjan Ekeberg(2015), "Early Screening Diagnostic Aid for Heart Disease using Data Mining", KTH Computer Science and Communication
+
+- Prof.K.Rajewari, Dr.V. Vaithiyanathan, Shailaja V.Pede(2013), "Feature Selection for Classification in Medical Data Mining", IJETTCS
+
+- Swati Shilaskar, Ashok Ghatol(2013), "Dimensionality Reduction Techniques for Improved Diagnosis of Heart Disease", IJCA
 
 - Decision Tree, scikit-learn documentation version 0.17, http://scikit-learn.org/stable/modules/tree.html
 
