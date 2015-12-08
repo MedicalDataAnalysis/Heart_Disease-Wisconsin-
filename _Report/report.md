@@ -114,31 +114,31 @@
 
   1. 3  (age) age in years
 
-  - 4  (sex) (1 = male; 0 = female)
+  2. 4  (sex) (1 = male; 0 = female)
 
-  - 9  (cp) chest pain type
+  3. 9  (cp) chest pain type
 
-  - 10 (trestbps) resting blood pressure
+  4. 10 (trestbps) resting blood pressure
 
-  - 12 (chol) serum cholestoral in mg/dl
+  5. 12 (chol) serum cholestoral in mg/dl
 
-  - 16 (fbs) fasting blood sugar > 120mg/dl (1 = true; 0 = false)
+  6. 16 (fbs) fasting blood sugar > 120mg/dl (1 = true; 0 = false)
 
-  - 19 (restecg) resting electrocardiographic results
+  7. 19 (restecg) resting electrocardiographic results
 
-  - 32 (thalach) maximum heart rate achieved
+  8. 32 (thalach) maximum heart rate achieved
 
-  - 38 (exang) exercise induced angina (1 = yes; 0 = no)
+  9. 38 (exang) exercise induced angina (1 = yes; 0 = no)
 
-  -  40 (oldpeak) ST depression induced by exercise relative to rest
+  10.  40 (oldpeak) ST depression induced by exercise relative to rest
 
-  -  41 (slope) the slope of the peak exercise ST segment
+  11.  41 (slope) the slope of the peak exercise ST segment
 
-  -  44 (ca) number of major vessals (0-3) colored by flourosopy
+  12.  44 (ca) number of major vessals (0-3) colored by flourosopy
 
-  -  51 (thal) 3 = normal; 6 = fixed defect; 7 = reversable defect
+  13.  51 (thal) 3 = normal; 6 = fixed defect; 7 = reversable defect
 
-  -  58 (num) diagnosis of heart disease (the predicted attribute)
+  14.  58 (num) diagnosis of heart disease (the predicted attribute)
 
   Complete attribute documentation:
   1. id: patient identification number
