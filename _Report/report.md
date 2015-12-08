@@ -6,18 +6,18 @@
 ## Index
 - 1.Introduction
   - 1.1 Project Plan
-  - 1.2 Data outline
-    - 1.2.1 Data description
-    - 1.2.2 Sample data outline
-    - 1.2.3 Data assessment
+  - 1.2 Data Outline
+    - 1.2.1 Data Description
+    - 1.2.2 Sample Data Outline
+    - 1.2.3 Data Assessment
       - 1.2.3.1 Descriptive Statistics
 - 2.Body
   - 2.1 Methodology
-    - 2.1.1 Goal: Predict Heart Disease with given features
+    - 2.1.1 Goal: Predict Heart Disease with Given Features
     - 2.1.2 Naive Bayse
     - 2.1.3 Support Vector Machines
     - 2.1.4 Tree
-  - 2.2 Working environment
+  - 2.2 Working Environment
     - 2.2.1 Language
     - 2.2.2 Library
     - 2.2.3 Analysis Time
@@ -60,9 +60,9 @@
 
 8. Conclusion
 
-## 1.2 Data outline
+## 1.2 Data Outline
 
-### 1.2.1 Data description
+### 1.2.1 Data Description
 
 1. Title : Heart Disease Databases
 
@@ -254,11 +254,11 @@
 
 7. Missing Attribute Values: Several.  Distinguished with value -9.0.
 
-### 1.2.2 Sample data outline
+### 1.2.2 Sample Data Outline
 
 <img src='/img/sampledata.jpg' width=800/>
 
-### 1.2.3 Data assessment
+### 1.2.3 Data Assessment
 
   1. Missing values
 
@@ -300,7 +300,7 @@
 
 ### 2.1 Methodology
 
-#### 2.1.1 Goal: Predict Heart Disease with given features
+#### 2.1.1 Goal: Predict Heart Disease with Given Features
 1. __Make several datasets__
 
   - Make presence to absence data
@@ -375,7 +375,7 @@ The advantages of support vector machines are:
 
 <img src = "/img/3_Decision_tree_max_depth.PNG" width = 600/>
 
-### 2.2 Working environment
+### 2.2 Working Environment
 
 #### 2.2.1 Language
 - Python3 (Anaconda)
@@ -525,7 +525,7 @@ chol 0 -> average value
 
 - Mai Shouman, Tim Turner, Rob Stocker(2011), "Using Decision Tree for Diagnosing Heart Disease Patients", CRPIT Volume 121 - Data Mining and Analytics 2011
 
-- Anna Olsson, Denise Nordlof(2015), "Early screening diagnostic aid for heart disease using data mining", KTH Royal Institute of Technology
+- Anna Olsson, Denise Nordlof(2015), "Early Screening Diagnostic Aid for Heart Disease Using Data Mining", KTH Royal Institute of Technology
 
 - Naive Bayse, scikit-learn documentation version 0.17, http://scikit-learn.org/stable/modules/naive_bayes.html
 
