@@ -521,16 +521,24 @@ chol 0 -> average value
 - Build medical platform using models we created
 
 ## 4.Reference
-- Ms. Shinde Swati B, March-April, 2015, "Decision Support System on Prediction of Heart Disease Using Data Mining Techniques", International Journal of Engineering Research and General Science Volume 3, Issue 2
+- Anna Olsson, Denise Nordlof(2015), "Early Screening Diagnostic Aid for Heart Disease Using Data Mining", KTH Royal Institute of Technology
 
 - Mai Shouman, Tim Turner, Rob Stocker(2011), "Using Decision Tree for Diagnosing Heart Disease Patients", CRPIT Volume 121 - Data Mining and Analytics 2011
 
-- Anna Olsson, Denise Nordlof(2015), "Early Screening Diagnostic Aid for Heart Disease Using Data Mining", KTH Royal Institute of Technology
+- Ms. Shinde Swati B, March-April, 2015, "Decision Support System on Prediction of Heart Disease Using Data Mining Techniques", International Journal of Engineering Research and General Science Volume 3, Issue 2
+
+- Decision Tree, scikit-learn documentation version 0.17, http://scikit-learn.org/stable/modules/tree.html
 
 - Naive Bayse, scikit-learn documentation version 0.17, http://scikit-learn.org/stable/modules/naive_bayes.html
 
 - Support Vector Machines, scikit-learn documentation version 0.17, http://scikit-learn.org/stable/modules/svm.html
 
-- Decision Tree, scikit-learn documentation version 0.17, http://scikit-learn.org/stable/modules/tree.html
+- cleveland.data, Cleveland Clinic Foundation
+
+- hungarian.data, Hungarian Institute of Cardiology, Budapest
+
+- long-beach-va.data, V.A. Medical Center, Long Beach, CA
+
+- switzerland.data, University Hospital, Zurich, Switzerland
 
 - Udacity, “Intro to Machine Learning”, https://www.udacity.com/course/intro-to-machine-learning--ud120
