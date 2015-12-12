@@ -34,8 +34,8 @@ pred_n = clf_n.predict(features_test_n)
 pred01 = clf01.predict(features_test01)
 pred01_n = clf01_n.predict(features_test01_n)
 
-accuracy = NBAccuracy(pred, labels_test)
-accuracy_n = NBAccuracy(pred_n, labels_test_n)
+accuracy = NBAccuracy1(pred, labels_test)
+accuracy_n = NBAccuracy1(pred_n, labels_test_n)
 accuracy01 = NBAccuracy(pred01, labels_test01)
 accuracy01_n = NBAccuracy(pred01_n, labels_test01_n)
 
