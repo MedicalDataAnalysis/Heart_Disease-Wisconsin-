@@ -36,3 +36,9 @@
 - Plan to make repositories for other disease whenever we get the data
 
 - Build medical platform using models we created
+
+### Learn More
+
+- The report of this project is in `_Report` folder.
+
+- If you want to contribute to this repository, feel free to contact us!
