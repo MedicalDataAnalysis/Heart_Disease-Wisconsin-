@@ -43,7 +43,7 @@ First of all, we had to consider what kind of topic to analyze. Both of us have 
 
 In reality like this situation, some doctor doesn’t have enough time to listen to patients for they rush their visit by limiting the meeting time to strictly less than five minutes. We believe that more data should be used when diagnosing a patient. The data from individual devices which include the personal medical history stored in the medical personal platform. The platform will observe the data and give notice to patients if it detects something unusual. It will recommend a proper hospital to the patents and send their data to the hospital. This will help doctors make better diagnosis and eventually prevent disease from getting worse.
 
-Our project goal is to take data from users which contains symptoms of disease and analyzed symptoms to find out whether users get disease or not. First of all, we want diagnosis data which contains symptoms and diagnosing result. In gathering dataset, we separate the disease with rules that categorize with part of body section like heart disease, bronchial pneumonia. We find the 'Heart Disease Databases' consist of 'cleveland.data, hungarian.data, long-beach-va.data, switzerland.data' with 76 attributes and 920 examples.
+Our project goal is to take data from users which contains symptoms of disease and analyzed symptoms to find out whether users get disease or not. First of all, we want diagnosis data which contains symptoms and diagnosing result. In gathering dataset, we separate the disease with rules that categorize with part of body section like heart disease, bronchial pneumonia. We found the 'Heart Disease Databases' consisting of 'cleveland.data, hungarian.data, long-beach-va.data, switzerland.data' with 76 attributes and 920 examples.
 
 ### 1.1 Project Plan
 1. Find data
@@ -154,7 +154,7 @@ Our project goal is to take data from users which contains symptoms of disease a
 
     <img src='/img/missingV.jpg' width=550/>
 
-  Missing value is '-9' or '0'. But we figure out that actual missing value is '?' or '-9'. When we eliminated patients with missing values, 67.5% of data were deleted. This was a huge loss, so we decided to preserve data by filling in the missing values with the average value of its feature computed from other patients. For example feature 'col' has -9 which is missing value we replaced as below.
+  Missing value is `-9` or `0`. But we figure out that actual missing value is `?` or `-9`. When we eliminated patients with missing values, 67.5% of data were deleted. This was a huge loss, so we decided to preserve data by filling in the missing values with the average value of its feature computed from other patients. For example feature `col` has -9 which is missing value we replaced as below.
 
   ```
   'col'== '-9' or '?' to 'col'= avg value of (feature 'col')
@@ -168,7 +168,7 @@ Our project goal is to take data from users which contains symptoms of disease a
 
   <img src="/img/outliers.jpg" width=300/>
 
-    Fortunately in 14 features of dataset has two outliers which are 'trestbps' and 'ca' feature. 'trestbps'is maximum heart rate but in Long Beach data one example has value ='0'. And 'ca' range (0~3) but the hungarian data has the 'ca' value is '9'. so we deleted both examples.
+    Fortunately in 14 features of dataset has two outliers which are `trestbps` and `ca` feature. `trestbps`is maximum heart rate but in Long Beach data one example has value =`0`. And `ca` range (0~3) but the hungarian data has the `ca` value is `9`. so we deleted both examples.
 
   3. Combine datasets
     - Cleveland
@@ -191,16 +191,16 @@ Our project goal is to take data from users which contains symptoms of disease a
 - Summary of each features in Heart disease database.
 
   <img src='/img/histogram.JPG' width=700/>
-- histogram of features 'age','blood pressure','cholestoral' and 'Maximum heart rate'
+- histogram of features `age`,`blood pressure`,`cholestoral` and `Maximum heart rate`
 
   <img src='/img/scatter.JPG' width=700/>
-- Scatter plot with x_label 'age' y_label='blood pressure', 'cholestoral' and 'Maximum heart rate'
+- Scatter plot with x_label `age` y_label=`blood pressure`, `cholestoral` and `Maximum heart rate`
 
   <p><img src='/img/bloodP_age.JPG' width=350>
   <img src='/img/chol_age.JPG' width=350/></p>
   <img src='/img/MaxH_Age.JPG' width=350/>
 
-- In Age- cholesterol scatter plot we recognized that 'switzerland' data which is blue dots are value '0' in every examples. So we have '0' missing value in 'switzerland' data 'cholesterol' feature.
+- In Age- cholesterol scatter plot we recognized that `switzerland` data which is blue dots are value `0` in every examples. So we have `0` missing value in `switzerland` data `cholesterol` feature.
 
 ## 2.Body
 
