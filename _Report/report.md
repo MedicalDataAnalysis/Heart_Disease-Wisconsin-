@@ -314,7 +314,7 @@ __Support vector machines (SVMs)__ are a set of supervised learning methods used
 
 |Name|Role  |
 |----|:--------:|
-|Hankyu Jang|Data Request, Cleaning, Analysis, Plotting using SPSS|
+|Hankyu Jang|Data Request, Data Cleaning, Data Analysis, Plotting using SPSS|
 |Jihoon Lee|Data Request, Research Article Analysis, Plotting using Matplotlib, Organize Report|
 
 ### 2.3 Finding
@@ -418,7 +418,7 @@ Best Working Data Sets for Each Algorithm
 
 - GitHub organization: `MedicalDataAnalysis`
 
-- repository: `Heart_Disease`
+- repository: `Heart_Disease-Wisconsin-`
 
 - Plan to make repositories for other disease whenever we get the data
 
