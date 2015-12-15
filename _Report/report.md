@@ -35,13 +35,15 @@
 
 ## 1.Introduction
 
-  The topic of this report is the diagnosing of heart disease. More specifically the possibility of diagnosing a patient without having to interact with other assistant.
+The topic of this report is the diagnosing of heart disease. More specifically the possibility of diagnosing a patient without having to interact with other assistant.
 
-  First of all, we have to consider what kind of topic to analyze. Both of us have interest in medical industry to provide diagnosing platform. The platform could help doctor to diagnosing with high confidence because doctor often diagnose with their own instinct which depends their experience and career. But there is always human error in everywhere. One of our student almost lost his mother due to several misdiagnosis. She sprained her ankle. Her ankle was infected by germs after getting an intramuscular shot. She suffered chronic gastritis due to overuse of antibiotics. When she was hospitalized, she even had a hypoglycemic shock which almost took her life away. Fortunately, a doctor finally found that she was suffering from a thyroid disease and she finally recovered her health with appropriate treatment.
+First of all, we had to consider what kind of topic to analyze. Both of us have interest in medical industry to provide diagnosing platform. The platform could help doctors to diagnose with high confidence because doctor often diagnose with their own instinct depending on their experience and career. But there is always human error in everywhere. Hankyu almost lost his mother due to several misdiagnoses. She sprained her ankle. Her ankle was infected by germs after getting an intramuscular shot. She suffered chronic gastritis due to overuse of antibiotics. When she was hospitalized, she even had a hypoglycemic shock which almost took her life away. Fortunately, a doctor finally found that she was suffering from a thyroid disease and she finally recovered her health with appropriate treatment.
 
-  In reality like this situation, some doctor don't have enough time to listen to patients for they rush their visit by limiting the meeting time to strictly less than ten minutes. We believe more data should be used when diagnosing a patient. The data from individual devices which include the personal medical history stored in the medical personal platform. The platform will observe the data and give notice to patients if it detects something unusual. It will recommend a proper hospital to the patents and send their data to the hospital. This will help doctors make better diagnosis and eventually prevent disease from getting worse.
+<img src = "/img/thyroid.png" width = 600 />
 
-  Our project goal is took data from users which contains symptoms of disease and analyzed symptoms to find out whether users get disease or not. First of all we want diagnosis data which contains symptoms and diagnosing result. In gathering dataset we separate the disease with rules that categorize with part of body section like heart disease, bronchial pneumonia. We find the 'Heart Disease Databases' consist of 'cleveland.data, hungarian.data, long-beach-va.data, switzerland.data' with 76 attributes and 920 examples.
+In reality like this situation, some doctor doesn’t have enough time to listen to patients for they rush their visit by limiting the meeting time to strictly less than five minutes. We believe that more data should be used when diagnosing a patient. The data from individual devices which include the personal medical history stored in the medical personal platform. The platform will observe the data and give notice to patients if it detects something unusual. It will recommend a proper hospital to the patents and send their data to the hospital. This will help doctors make better diagnosis and eventually prevent disease from getting worse.
+
+Our project goal is to take data from users which contains symptoms of disease and analyzed symptoms to find out whether users get disease or not. First of all, we want diagnosis data which contains symptoms and diagnosing result. In gathering dataset, we separate the disease with rules that categorize with part of body section like heart disease, bronchial pneumonia. We find the 'Heart Disease Databases' consist of 'cleveland.data, hungarian.data, long-beach-va.data, switzerland.data' with 76 attributes and 920 examples.
 
 ### 1.1 Project Plan
 1. Find data
@@ -140,118 +142,6 @@
 
   14.  58 (num) diagnosis of heart disease (the predicted attribute)
 
-  Complete attribute documentation:
-  1. id: patient identification number
-  2. ccf: social security number (I replaced this with a dummy value of 0)
-  3. age: age in years
-  4. sex: sex (1 = male; 0 = female)
-  5. painloc: chest pain location (1 = substernal; 0 = otherwise)
-  6. painexer (1 = provoked by exertion; 0 = otherwise)
-  7. relrest (1 = relieved after rest; 0 = otherwise)
-  8. pncaden (sum of 5, 6, and 7)
-  9. cp: chest pain type       
-      - Value 1: typical angina
-      - Value 2: atypical angina
-      - Value 3: non-anginal pain
-      - Value 4: asymptomatic
-
-  10. trestbps: resting blood pressure (in mm Hg on admission to the hospital)
-  11. htn
-  12. chol: serum cholestoral in mg/dl
-  13. smoke: I believe this is 1 = yes; 0 = no (is or is not a smoker)
-  14. cigs (cigarettes per day)
-  15. years (number of years as a smoker)
-  16. fbs: (fasting blood sugar > 120 mg/dl)  (1 = true; 0 = false)
-  17. dm (1 = history of diabetes; 0 = no such history)
-  18. famhist: family history of coronary artery disease (1 = yes; 0 = no)
-  19. restecg: resting electrocardiographic results
-  -- Value 0: normal
-  -- Value 1: having ST-T wave abnormality (T wave inversions and/or ST
-  elevation or depression of > 0.05 mV)
-  -- Value 2: showing probable or definite left ventricular hypertrophy
-  by Estes' criteria
-  20. ekgmo (month of exercise ECG reading)
-  21. ekgday(day of exercise ECG reading)
-  22. ekgyr (year of exercise ECG reading)
-  23. dig (digitalis used furing exercise ECG: 1 = yes; 0 = no)
-  24. prop (Beta blocker used during exercise ECG: 1 = yes; 0 = no)
-  25. nitr (nitrates used during exercise ECG: 1 = yes; 0 = no)
-  26. pro (calcium channel blocker used during exercise ECG: 1 = yes; 0 = no)
-  27. diuretic (diuretic used used during exercise ECG: 1 = yes; 0 = no)
-  28. proto: exercise protocol
-    - 1 = Bruce
-    - 2 = Kottus
-    - 3 = McHenry
-    - 4 = fast Balke
-    - 5 = Balke
-    - 6 = Noughton
-    - 7 = bike 150 kpa min/min
-    - 8 = bike 125 kpa min/min
-    - 9 = bike 100 kpa min/min
-    - 10 = bike 75 kpa min/min
-    - 11 = bike 50 kpa min/min
-    - 12 = arm ergometer
-  29. thaldur: duration of exercise test in minutes
-  30. thaltime: time when ST measure depression was noted
-  31. met: mets achieved
-  32. thalach: maximum heart rate achieved
-  33. thalrest: resting heart rate
-  34. tpeakbps: peak exercise blood pressure (first of 2 parts)
-  35. tpeakbpd: peak exercise blood pressure (second of 2 parts)
-  36. dummy
-  37. trestbpd: resting blood pressure
-  38. exang: exercise induced angina (1 = yes; 0 = no)
-  39. xhypo: (1 = yes; 0 = no)
-  40. oldpeak = ST depression induced by exercise relative to rest
-  41. slope: the slope of the peak exercise ST segment
-    - Value 1: upsloping
-    - Value 2: flat
-    - Value 3: downsloping
-  42. rldv5: height at rest
-  43. rldv5e: height at peak exercise
-  44. ca: number of major vessels (0-3) colored by flourosopy
-  45. restckm: irrelevant
-  46. exerckm: irrelevant
-  47. restef: rest raidonuclid (sp?) ejection fraction
-  48. restwm: rest wall (sp?) motion abnormality
-    - 0 = none
-    - 1 = mild or moderate
-    - 2 = moderate or severe
-    - 3 = akinesis or dyskmem (sp?)
-  49. exeref: exercise radinalid (sp?) ejection fraction
-  50. exerwm: exercise wall (sp?) motion
-  51. thal: 3 = normal; 6 = fixed defect; 7 = reversable defect
-  52. thalsev: not used
-  53. thalpul: not used
-  54. earlobe: not used
-  55. cmo: month of cardiac cath (sp?)  (perhaps "call")
-  56. cday: day of cardiac cath (sp?)
-  57. cyr: year of cardiac cath (sp?)
-  58. num: diagnosis of heart disease (angiographic disease status)
-    - Value 0: < 50% diameter narrowing
-    - Value 1: > 50% diameter narrowing
-    - (in any major vessel: attributes 59 through 68 are vessels)
-  59. lmt
-  60. ladprox
-  61. laddist
-  62. diag
-  63. cxmain
-  64. ramus
-  65. om1
-  66. om2
-  67. rcaprox
-  68. rcadist
-  69. lvx1: not used
-  70. lvx2: not used
-  71. lvx3: not used
-  72. lvx4: not used
-  73. lvf: not used
-  74. cathef: not used
-  75. junk: not used
-  76. name: last name of patient
-
-   (I replaced this with the dummy string "name")
-
 7. Missing Attribute Values: Several.  Distinguished with value -9.0.
 
 ### 1.2.2 Sample Data Outline
@@ -264,20 +154,36 @@
 
     <img src='/img/missingV.jpg' width=550/>
 
-  missing value is '-9' or '0'. But we figure out that actual missing value is '?' or '-9'. We exchange missing value with other features value's average value. For example feature 'col' has -9 which is missing value we replaced as below.
+  Missing value is '-9' or '0'. But we figure out that actual missing value is '?' or '-9'. When we eliminated patients with missing values, 67.5% of data were deleted. This was a huge loss, so we decided to preserve data by filling in the missing values with the average value of its feature computed from other patients. For example feature 'col' has -9 which is missing value we replaced as below.
 
   ```
   'col'== '-9' or '?' to 'col'= avg value of (feature 'col')
   ```
 
-  We used pandas for replacing. And also used round function to insert integer value to examples.
+  We used Pandas library for replacing. And also used round function to insert integer value to examples. Figure below is the missing value insert in each datasets.
 
+  <img src = "/img/missing_value.jpg" width = 600/>
 
   2. Outliers
 
   <img src="/img/outliers.jpg" width=300/>
 
     Fortunately in 14 features of dataset has two outliers which are 'trestbps' and 'ca' feature. 'trestbps'is maximum heart rate but in Long Beach data one example has value ='0'. And 'ca' range (0~3) but the hungarian data has the 'ca' value is '9'. so we deleted both examples.
+
+  3. Combine datasets
+    - Cleveland
+    <img src = "/img/data_cleveland.jpg" width = 800/>
+
+    - Hungarian
+    <img src = "/img/data_hungarian.jpg" width = 800/>
+
+    - Switzerland
+    <img src = "/img/data_switzerland.jpg" width = 800/>
+
+    - Long Beach
+    <img src = "/img/data_long_beach.jpg" width = 800/>
+
+    Except for `ca` and `chol` features, others have similarity in each data set. Every `[mean, min, 25%, 50%, 75%, max]` values’ errors are within 10% range. It is considered that each data sets bear resemblance to other data sets. We drew scatter plot graphs of each data sets below to help you visualize the state of data sets.
 
 #### 1.2.3.1 Descriptive Statistics
 
@@ -301,7 +207,10 @@
 ### 2.1 Methodology
 
 #### 2.1.1 Goal: Predict Heart Disease with Given Features
+
 1. __Make several datasets__
+
+  Before diving into analysis, we reorganized the data into a proper format for use in analysis. We created presence to absence data by changing the labels (0 -> 0 and 1, 2, 3, 4 -> 1). Then we created another two data sets using the original data. First, we applied feature scaling method to make a new data by standardizing the features for use in SVM. Second, we calculated quantiles of continuous features to categorize entries into four groups because we wanted to check whether or not this grouping would provide better prediction.
 
   - Make presence to absence data
 
@@ -324,6 +233,7 @@
     - Set each parts with values 1 ~ 4
 
   - Combine all data into one (total 918 patients)
+    The feature characteristics of four regions are similar
 
     - Cleveland
 
@@ -333,15 +243,20 @@
 
     - VA
 
-2. __Make training set & test set__
+2. __Make training set, test set, and verification set__
 
-  - Cleveland data: few missing values
+  To make models and verify them, we randomly divided each data set into three parts: 60% for training, 20% for test and 20% for verification. Then, we created hundreds of models using training data and tested them with test features to find the one with the highest performance.
 
-  - Used Cleveland data + some other data as training set.
+  -	Training set: 60%
+  -	Test set: 20%
+  -	Verification set: 20%
 
-  - Find ratio of training set and test set that best predicts heart disease
+3. __Made Accuracy Function to adequately give accuracy on 0, 1, 2, 3, 4 Prediction__
+At first, we used an accuracy function that calculates accuracy only if the two given values have the same value. Let’s assume that a patient’s heart disease rate was 4. Also, assume that there are two cases of prediction: case 1 predicts the label with value 3 and case2 predicts the label with value 0. The accuracy function returns 0% accuracy on both cases. However, this behavior needed to be changed because case 1 is much more accurate than case 2.
 
-3. __Algorithms__
+Therefore, we gave an accuracy of 0.8 on the value in which the difference between real label and prediction label is equal to 1. For example, accuracy function will return 80% accuracy on case 1 above. However, if the model predicts label 1 with 0, we didn’t give accuracy because this may predict a person having no heart disease even if he doesn’t have heart disease and vice versa.
+
+4. __Algorithms__
 
   - Naive Bayse
 
@@ -354,12 +269,6 @@ __Naive Bayes__ methods are a set of supervised learning algorithms based on app
 
 #### 2.1.3 Support Vector Machines
 __Support vector machines (SVMs)__ are a set of supervised learning methods used for classification, regression and outliers detection.
-
-The advantages of support vector machines are:
-- Effective in high dimensional spaces.
-- Still effective in cases where number of dimensions is greater than the number of samples.
-- Uses a subset of training points in the decision function (called support vectors), so it is also memory efficient.
-- Versatile: different Kernel functions can be specified for the decision function. Common kernels are provided, but it is also possible to specify custom kernels.
 
 ##### Parameter which makes huge difference in decision boundaries
 - Kernel
@@ -378,9 +287,10 @@ The advantages of support vector machines are:
 ### 2.2 Working Environment
 
 #### 2.2.1 Language
-- Python3 (Anaconda)
 
-- Python2 (IPythonNotebook)
+-	Python3 (Anaconda): Data Cleaning & Analysis
+-	Python2 (IPythonNotebook): Plotting
+-	SPSS: Plotting
 
 #### 2.2.2 Library
 - Numpy
@@ -391,97 +301,86 @@ The advantages of support vector machines are:
 
 - Sklearn
 
-- Pydot
-
 #### 2.2.3 Analysis Time
 
 |Week|Activity  |
 |----|:--------:|
 |4~11|Data Mining (Request data)|
 |12|Data Cleaning|
-|13~14|Data Analysis|
-|15|Prepare Report|
+|13~15|Data Analysis|
+|16|Prepare Report|
+
+#### 2.2.4 Team Role
+
+|Name|Role  |
+|----|:--------:|
+|Hankyu Jang|Data Request, Cleaning, Analysis, Plotting using SPSS|
+|Jihoon Lee|Data Request, Research Article Analysis, Plotting using Matplotlib, Organize Report|
 
 ### 2.3 Finding
 
 #### 2.3.1 Naive Bayse
 
-- All Data (Training: 50%, Test: 50%)
+-	Simulation 10 times (Training: 60%, Test: 20%, Verification: 20%)
 
-|Data Type|Scale|Accuracy|
-|---|:---:|:---:|
-|___Original___|___0, 1___|___81.30 %___|
-|Nominal|0, 1|74.35 %|
-|Original|0, 1, 2, 3, 4|37.39 %|
-|___Nominal___|___0, 1, 2, 3, 4___|___40.87 %___|
+- 0, 1 Prediction
+  -	Best training set prediction percentage: 85%
+
+  -	Corresponding verification set prediction percentage: 76%
+
+- 0, 1, 2, 3, 4 Prediction
+  -	Best training set prediction percentage: 73%
+
+  -	Corresponding verification set prediction percentage: 74%
+
+<img src = "/img/test_verification_Naive_Bayse_01.jpg" width = 400 />
+<img src = "/img/test_verification_Naive_Bayse_01234.jpg" width = 400 />
 
 #### 2.3.2 Support Vector Machines
 
-- All Data (Training: 40%, Test: 60%)
-chol 0 -> average value
+-	Simulation 10 times (Training: 60%, Test: 20%, Verification: 20%)
 
-|Data Type|Scale|Kernel|Accuracy|
-|---|:---:|:---:|:---:|
-|Original|0, 1|rbf|36.96 %|
-|Nominal|0, 1|rbf|73.73 %|
-|Feature Scaled|0, 1|rbf|77.72 %|
-|Original|0, 1, 2, 3, 4|rbf|36.96 %|
-|Nominal|0, 1, 2, 3, 4|rbf|42.03 %|
-|Feature Scaled|0, 1, 2, 3, 4|rbf|43.84 %|
-|___Original___|___0, 1___|___linear___|___79.53 %___|
-|Nominal|0, 1|linear|72.46 %|
-|Feature Scaled|0, 1|linear|79.35 %|
-|___Original___|___0, 1, 2, 3, 4___|___linear___|___47.83 %___|
-|Nominal|0, 1, 2, 3, 4|linear|42.93 %|
-|Feature Scaled|0, 1, 2, 3, 4|linear|44.75 %|
+- 0, 1 Prediction
+  -	Best training set prediction percentage: 87% (rbf kernel)
 
+  -	Corresponding verification set prediction percentage: 82%
+
+- 0, 1, 2, 3, 4 Prediction
+  -	Best training set prediction percentage: 76% (linear kernel)
+
+  -	Corresponding verification set prediction percentage: 77%
+
+<img src = "/img/test_verification_SVM_linear_01.jpg" width = 400 />
+<img src = "/img/test_verification_SVM_linear_01234.jpg" width = 400 />
+<img src = "/img/test_verification_SVM_rbf_01.jpg" width = 400 />
+<img src = "/img/test_verification_SVM_rbf_01234.jpg" width = 400 />
 
 #### 2.3.3 Decision Tree
 
-- All Data 0, 1 (Training: 50%, Test: 50%)
+-	Simulation 10 times (Training: 60%, Test: 20%, Verification: 20%)
+-	Controlling max depth is better than controlling min split in leaf node.
 
-|Data Type|Scale|# of Samples at Leaf Node|Max Depth|Accuracy|
-|---|:---:|:---:|:---:|:---:|
-|Original|0, 1|2 |-|62.39 %|
-|Original|0, 1|5 |-|64.35 %|
-|Original|0, 1|10|-|60.65 %|
-|Nominal |0, 1|2 |-|64.35 %|
-|Nominal |0, 1|5 |-|61.74 %|
-|Nominal |0, 1|10|-|60.00 %|
-|Original|0, 1|-|2 |62.83 %|
-|___Original___|___0, 1___|-|___3___ |___76.96 %___|
-|Original|0, 1|-|4 |73.04 %|
-|Nominal |0, 1|-|2 |63.04 %|
-|Nominal |0, 1|-|3 |68.26 %|
-|Nominal |0, 1|-|4 |63.04 %|
+- 0, 1 Prediction>
+  -	Best training set prediction percentage: 83% (max depth = 4)
 
-- All Data 0, 1, 2, 3, 4 (Training: 50%, Test: 50%)
+  -	Corresponding verification set prediction percentage: 72%
 
-|Data Type|Scale|# of Samples at Leaf Node|Max Depth|Accuracy|
-|---|:---:|:---:|:---:|:---:|
-|___Original___|___0, 1, 2, 3, 4___|___2___ |-|___38.26 %___|
-|Original|0, 1, 2, 3, 4|5 |-|36.96 %|
-|Original|0, 1, 2, 3, 4|10|-|36.30 %|
-|Nominal |0, 1, 2, 3, 4|2 |-|35.65 %|
-|Nominal |0, 1, 2, 3, 4|5 |-|36.74 %|
-|Nominal |0, 1, 2, 3, 4|10|-|36.96 %|
-|Original|0, 1, 2, 3, 4|-|2 |37.83 %|
-|Original|0, 1, 2, 3, 4|-|3 |37.61 %|
-|Original|0, 1, 2, 3, 4|-|4 |38.04 %|
-|Nominal |0, 1, 2, 3, 4|-|2 |38.04 %|
-|Nominal |0, 1, 2, 3, 4|-|3 |38.04 %|
-|Nominal |0, 1, 2, 3, 4|-|4 |38.04 %|
+- 0, 1, 2, 3, 4 Prediction
+  -	Best training set prediction percentage: 73% (max depth = 2)
+
+  -	Corresponding verification set prediction percentage: 72%
+
+<img src = "/img/test_verification_Decision_Tree_Depth_01.jpg" width = 400 />
+<img src = "/img/test_verification_Decision_Tree_Depth_01234.jpg" width = 400 />
+<img src ="/img/test_verification_Decision_Tree_Split_01.jpg" width = 400 />
+<img src = "/img/test_verification_Decision_Tree_Split_01234.jpg" width = 400 />
 
 #### 2.3.4 Algorithms Comparison
 
-|Algorithm|Data Type|Scale|Accuracy|
-|---|:---:|:---:|:---:|
-|___Naive Bayse___|___Original___|___0, 1___|___81.30 %___|
-|SVM (kernel = linear)|Original|0, 1|79.53 %|
-|Decision Tree (Max Depth = 3)|Original|0, 1|76.96 %|
-|Naive Bayse|Nominal|0, 1, 2, 3, 4|40.87 %|
-|___SVM (kernel = linear)___|___Original___|___0, 1, 2, 3, 4___|___47.83 %___|
-|Decision Tree (# of samples at leaf node = 2)|Original|0, 1, 2, 3, 4|38.26 %|
+-	Best algorithm to predict hearth disease: SVM
+
+<img src = "/img/algorithms_compare_01.jpg" width = 400 />
+<img src = "/img/algorithms_compare_01234.jpg" width = 400 />
 
 ## 3.Conclusion
 
@@ -491,14 +390,19 @@ chol 0 -> average value
 
 |Algorithm|Data Type|Scale|Accuracy|
 |---|:---:|:---:|:---:|
-|___Naive Bayse___|___Original___|___0, 1___|___81.30 %___|
-|___SVM (kernel = linear)___|___Original___|___0, 1, 2, 3, 4___|___47.83 %___|
+|___SVM (kernel = rbf)___|___Feature Scaled Data___|___0, 1___|___82 %___|
+|___SVM (kernel = linear)___|___Nominal Data___|___0, 1, 2, 3, 4___|___77 %___|
+
+Best Working Data Sets for Each Algorithm
+
+-	Naïve Bayse: Original Data
+-	SVM: Feature Scaled Data, Nominal Data
+-	Decision Tree: Nominal Data
+
 
 ### 3.2 Unexpected
 
-- Naive Bayse Accuracy: Analysis using original data (chol not handled) got higher accuracy. Why?
-
-- Visualizing Decision Tree
+- Difficulty in Visualizing Decision Tree
 
 ### 3.3 Expectation
 
